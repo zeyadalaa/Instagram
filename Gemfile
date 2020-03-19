@@ -22,22 +22,7 @@ gem 'haml', '~> 5.1', '>= 5.1.2'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 gem 'paperclip', '~> 6.1'
-gem 'masonry-rails'
-=======
->>>>>>> 5d87d34... Revert "Instagram-7 : Upload image"
-=======
->>>>>>> 5d87d34... Revert "Instagram-7 : Upload image"
-=======
-gem 'paperclip', '~> 6.1'
->>>>>>> 2810374... Instagram-7 : Upload image
-=======
-gem 'paperclip', '~> 6.1'
->>>>>>> b6b06a2... Revert "Instagram-8 : Change layout and styling"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
