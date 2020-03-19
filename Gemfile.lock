@@ -246,7 +246,22 @@ DEPENDENCIES
   haml (~> 5.1, >= 5.1.2)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  masonry-rails
   paperclip (~> 6.1)
+=======
+>>>>>>> 5d87d34... Revert "Instagram-7 : Upload image"
+=======
+>>>>>>> 5d87d34... Revert "Instagram-7 : Upload image"
+=======
+  paperclip (~> 6.1)
+>>>>>>> 2810374... Instagram-7 : Upload image
+=======
+  paperclip (~> 6.1)
+>>>>>>> b6b06a2... Revert "Instagram-8 : Change layout and styling"
   puma (~> 4.3)
   rails (~> 6.0.2, >= 6.0.2.1)
   sass-rails (>= 6)
