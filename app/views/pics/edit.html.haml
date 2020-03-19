@@ -4,4 +4,6 @@
       .panel-heading
         %h1 Edit Post
       .panel-body
-        =render 'form'
+        .cuttent_image
+        = image_tag @pic.image.url(:medium)
+        = render 'form'
