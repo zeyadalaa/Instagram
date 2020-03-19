@@ -1,5 +1,25 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+.col-md-6.col-md-offset-3
+  #pics.transitions-enabled
+    -@pics.each do |pic|
+      .box.panel.panel-default
+        = link_to (image_tag pic.image.url), pic
+        %h2
+          = link_to pic.title, pic
+=======
+=======
+>>>>>>> b6b06a2... Revert "Instagram-8 : Change layout and styling"
 
 - @pics.each do |pic|
   %h2
     = link_to pic.title, pic
-  = image_tag pic.image.url
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5d87d34... Revert "Instagram-7 : Upload image"
+=======
+  = link_to (image_tag pic.image.url(:medium)),pic
+>>>>>>> 2810374... Instagram-7 : Upload image
+=======
+  = link_to (image_tag pic.image.url(:medium)),pic
+>>>>>>> b6b06a2... Revert "Instagram-8 : Change layout and styling"
