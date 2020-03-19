@@ -2,6 +2,12 @@
   = @pic.title
 %p
   = @pic.description
+%br
+%p
+Created By
+= @pic.user.email
+%br
+%br
 
 = link_to 'Back', root_path
 = link_to 'Edit', edit_pic_path
