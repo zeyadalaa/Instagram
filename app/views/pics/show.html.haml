@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-=======
 %h1
   = @pic.title
+= image_tag @pic.image.url
 %p
   = @pic.description
 %br
@@ -10,25 +9,7 @@ Created By
 = @pic.user.email
 %br
 %br
->>>>>>> 5d87d34... Revert "Instagram-7 : Upload image"
 
-#pic_show.row
-  .col-md-6.col-md-offset-3
-    .panel.panel-default
-      .panel.heading.pic_image
-        = image_tag @pic.image.url
-      .panel-body
-        %h1= @pic.title
-        %p= @pic.description
-
-      .panel-footer
-        .row
-          .col-md-6
-            %p.user
-              by
-              = @pic.user.email
-          .col.md-6
-            .btn-group.pull-right
-              -if user_signed_in?
-                = link_to 'Edit', edit_pic_path, class: "btn btn-info"
-                = link_to 'Delete', pic_path, method: :delete , data: {confirm: 'Are you sure?'}, class: "btn btn-danger"
+= link_to 'Back', root_path
+= link_to 'Edit', edit_pic_path
+= link_to 'Delete', pic_path, method: :delete , data: {confirm: 'Are you sure?'}
