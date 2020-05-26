@@ -29,15 +29,17 @@ class PicsController < ApplicationController
   end
 
   def update
-    if @pic.update(pic_params)
+    if User.find(@pic.user_id).email == current_user && @pic.update(pic_params)
       redirect_to @pic, notice: "Pic is updated"
     else
-      render 'edit'
+      redirect_to pic_path
     end
   end
 
   def destroy
-    @pic.destroy
+    if User.find(@pic.user_id).email == current_user
+      @pic.destroy
+    end
     redirect_to root_path
   end
 

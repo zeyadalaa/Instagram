@@ -24,3 +24,19 @@
               - if user_signed_in?
                 = link_to "Edit", edit_pic_path, class: "btn btn-info"
                 = link_to "Delete", pic_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger"
+        -@pic.comments.each do |comment|
+          %p
+            %b
+              = comment.commenter
+            "
+            = comment.body
+            "
+        =form_with(model: [ @pic, @pic.comments.build ], local: true) do |form|
+          %p
+            = form.label :user
+            = form.text_field :commenter , value:current_user.email ,readonly: :true , :style=> 'width: 50%;'
+          %p
+            = form.label :body
+            = form.text_field :body
+          %p
+            = form.submit
